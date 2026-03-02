@@ -2,7 +2,7 @@
 
 **Intended Behavior**: Function should print a greeting using the provided name.
 **Issue Type**: Syntax error
-**Notes**: Missing colon after function definition causes a syntax error; the file currently fails to run...
+**Notes**: Missing colon after function definition causes a syntax error; the file currently fails to run.ls
 
 ## Bug 2 – bug2.py
 
