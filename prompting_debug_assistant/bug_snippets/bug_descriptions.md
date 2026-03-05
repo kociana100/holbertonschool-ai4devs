@@ -1,32 +1,32 @@
 ## Bug 1 – bug1.py
 
-**Intended Behavior**: Function should print a greeting using the provided name.
+**Intended Behavior**: Parse scores and output the average grade as a letter grade (A, B, C, D, or F).
 **Issue Type**: Syntax error
-**Notes**: Missing colon after function definition causes a syntax error; the file currently fails to run.ls
+**Notes**: Missing colon after `elif avg >= 80` on line 14. Python requires a colon at the end of conditional statements.
 
 ## Bug 2 – bug2.py
 
-**Intended Behavior**: Calculate and print the average of the numbers in the list.
-**Issue Type**: Logic error
-**Notes**: The divisor is `len(nums) - 1` instead of `len(nums)`, which produces an incorrect result.
+**Intended Behavior**: Calculate total expenses and find the category with the highest spending.
+**Issue Type**: Logic errors (2 bugs)
+**Notes**: (1) `total_spent()` subtracts income values instead of ignoring them; (2) `top_category()` uses `<` instead of `>`, finding the category with minimum spending instead of maximum.
 
 ## Bug 3 – bug3.js
 
-**Intended Behavior**: Log the uppercase version of `user.name` if a user object exists.
-**Issue Type**: Runtime error
-**Notes**: `user` is initialized to `null`, so accessing `user.name` throws a TypeError.
+**Intended Behavior**: Load user profiles from an API and display formatted user information.
+**Issue Type**: Runtime exception (insufficient null/undefined checking)
+**Notes**: `formatUser()` tries to access `user.address.city` without checking if `address` exists. Some API responses are missing the `address` property, causing a TypeError.
 
 ## Bug 4 – bug4.cpp
 
-**Intended Behavior**: Print all elements of the `arr` array.
-**Issue Type**: Logic / off-by-one error
-**Notes**: Loop uses `i <= n` instead of `i < n`, causing an out-of-bounds access when `i == 4`.
+**Intended Behavior**: Calculate moving averages of a vector with a given window size.
+**Issue Type**: Off-by-one error
+**Notes**: Loop condition `i <= (int)nums.size() - window + 1` should be `i < (int)nums.size() - window` (or without the `+1`). This causes one extra iteration that accesses out-of-bounds memory.
 
 ## Bug 5 – bug5.js
 
-**Intended Behavior**: Iterate from 0 to 4 and log each number once.
-**Issue Type**: Logic/infinite loop
-**Notes**: Loop decrements `i` (`i--`) while the condition `i < 5` is always true for negative numbers, causing an infinite loop.
+**Intended Behavior**: Process all items in the queue, removing each after processing.
+**Issue Type**: Infinite loop (logic error)
+**Notes**: High-priority items are processed but never removed from the queue (missing `queue.shift()`), so the same item is processed infinitely.
 
 
 
