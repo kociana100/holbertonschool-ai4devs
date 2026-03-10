@@ -100,7 +100,3 @@
   - **Input**: Description of the programming task.
   - **Output**: Ready-to-use code snippet, query, or script.
 
-- **Code Template Generation**
-  - **Goal**: Automatically generate templates for common project structures.
-  - **Input**: Framework or application type.
-  - **Output**: Predefined project template with starter files.
