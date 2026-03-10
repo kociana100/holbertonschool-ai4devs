@@ -1,4 +1,4 @@
-# Prompt Use Casess 
+# Prompt Use Cases
 
 ## Code Quality
 
@@ -17,6 +17,11 @@
 - **Input**: Source file or snippet.
 - **Output**: Review comments + suggested improvements.
 
+### Use Case – Performance Optimization
+- **Goal**: Improve execution speed and reduce unnecessary resource usage.
+- **Input**: Existing code that performs slowly or inefficiently.
+- **Output**: Optimized code with explanation of performance improvements.
+
 ## Debugging
 
 ### Use Case – Error Explanation
@@ -33,6 +38,11 @@
 - **Goal**: Analyze how the program behaves line by line.
 - **Input**: Function or algorithm.
 - **Output**: Execution walkthrough with variable changes.
+
+### Use Case – Log Analysis
+- **Goal**: Identify issues in application behavior using log files.
+- **Input**: Application logs or debugging output.
+- **Output**: Explanation of possible causes of the issue and suggestions for fixes.
 
 ## Documentation
 
@@ -51,6 +61,11 @@
 - **Input**: Project summary + files/features.
 - **Output**: README section or full README draft.
 
+### Use Case – API Documentation Generation
+- **Goal**: Generate structured documentation for APIs or endpoints.
+- **Input**: API routes, functions, or service descriptions.
+- **Output**: Organized API documentation describing endpoints, parameters, and responses.
+
 ## Testing
 
 ### Use Case – Unit Test Generation
@@ -67,6 +82,11 @@
 - **Goal**: Explain why a test failed and how to fix it.
 - **Input**: Failed test output + source code.
 - **Output**: Root cause analysis + corrected code or test.
+
+### Use Case – Edge Case Detection
+- **Goal**: Identify unusual or boundary inputs that could break the program.
+- **Input**: Function or system behavior description.
+- **Output**: List of edge cases and suggested tests for those scenarios.
 
 ## Productivity & Automation
 
@@ -85,5 +105,8 @@
 - **Input**: Description of the programming task (e.g., file reading, API request, data parsing)
 - **Output**: Ready-to-use code snippet in the requested programming language
 
-
+### Use Case – Code Template Generation
+- **Goal**: Automatically generate templates for common project structures.
+- **Input**: Framework or application type (e.g., REST API, CLI tool, web app).
+- **Output**: Predefined project template with folder structure and starter code.
 
