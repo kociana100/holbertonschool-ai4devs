@@ -2,80 +2,80 @@
 
 ## Code Quality
 - **Refactoring**
-  - **Goal**: Improve readability, maintainability, and performance.
-  - **Input**: Source function or class in [LANGUAGE].
-  - **Output**: Refactored code with explanation of improvements.
+  - **Goal**: Improve readability, maintainability, and performance without changing behavior  
+  - **Input**: Source function/class in [LANGUAGE] + constraints (style guide, complexity limit)  
+  - **Output**: Refactored code + explanation of changes and trade-offs  
 
 - **Style Enforcement**
-  - **Goal**: Enforce consistent naming, formatting, and coding conventions.
-  - **Input**: Code block.
-  - **Output**: Rewritten code with consistent style.
+  - **Goal**: Enforce consistent naming, formatting, and idioms across a codebase  
+  - **Input**: Code block or file + style rules (ESLint/Black/GoFmt conventions, naming rules)  
+  - **Output**: Rewritten code following the style + list of rule violations fixed  
 
-- **Code Review Assistance**
-  - **Goal**: Identify bad practices, duplicated logic, or unclear structures.
-  - **Input**: Source file or snippet.
-  - **Output**: Review comments with suggested improvements.
+- **Dead Code & Smell Detection**
+  - **Goal**: Identify unused code, risky patterns, and maintainability “smells”  
+  - **Input**: File(s) or module + context about expected behavior and usage  
+  - **Output**: Ranked list of issues + suggested safe removals/rewrites  
 
 ## Debugging
-- **Error Explanation**
-  - **Goal**: Understand compiler, runtime, or logic errors.
-  - **Input**: Error message and related code.
-  - **Output**: Cause of the error and possible fixes.
+- **Stack Trace Triage**
+  - **Goal**: Explain an error quickly and propose the most likely fix  
+  - **Input**: Stack trace + relevant code snippet + runtime/version info  
+  - **Output**: Root-cause hypothesis + minimal fix + verification steps  
 
-- **Bug Fix Suggestions**
-  - **Goal**: Find and correct faulty logic in code.
-  - **Input**: Buggy code snippet and expected behavior.
-  - **Output**: Corrected code with explanation of the fix.
+- **Logic Bug Investigation**
+  - **Goal**: Fix “wrong output” problems when code runs but behaves incorrectly  
+  - **Input**: Failing input/output example + function code + expected behavior description  
+  - **Output**: Explanation of the incorrect logic + corrected code + added edge-case tests  
 
-- **Step-by-Step Trace**
-  - **Goal**: Analyze program behavior line by line.
-  - **Input**: Function or algorithm.
-  - **Output**: Execution walkthrough with variable changes.
+- **Performance Regression Diagnosis**
+  - **Goal**: Find why code became slower and how to optimize safely  
+  - **Input**: Before/after timings + hot path code + data sizes/constraints  
+  - **Output**: Bottleneck analysis + optimized implementation + measurement plan  
 
 ## Documentation
-- **Code Comment Generation**
-  - **Goal**: Add clear explanations inside the code.
-  - **Input**: Raw code without comments.
-  - **Output**: Commented version of the code.
+- **API Doc Generation**
+  - **Goal**: Produce accurate docs so others can use the API correctly  
+  - **Input**: Function signatures + examples + error cases + constraints  
+  - **Output**: Docstring/Markdown docs + usage examples + parameter/return details  
 
-- **Function Documentation**
-  - **Goal**: Describe purpose, parameters, and return values.
-  - **Input**: Function or method definition.
-  - **Output**: Docstring or structured documentation.
+- **README / Onboarding Guide**
+  - **Goal**: Help new developers run, test, and contribute quickly  
+  - **Input**: Project structure + commands + env vars + prerequisites  
+  - **Output**: Step-by-step setup/run/test instructions + troubleshooting section  
 
-- **README Writing**
-  - **Goal**: Explain project setup, usage, and purpose.
-  - **Input**: Project summary and features.
-  - **Output**: README section or full README draft.
+- **Change Log / Release Notes Drafting**
+  - **Goal**: Summarize changes clearly for users and stakeholders  
+  - **Input**: PR description, commit summary, or list of changes  
+  - **Output**: Release notes with highlights, breaking changes, and migration notes  
 
 ## Testing
-- **Unit Test Generation**
-  - **Goal**: Create tests for functions and modules.
-  - **Input**: Source code or function description.
-  - **Output**: Unit test cases in [TEST FRAMEWORK].
+- **Unit Test Authoring**
+  - **Goal**: Add targeted tests that lock in expected behavior and prevent regressions  
+  - **Input**: Function/module code + expected behavior + edge cases  
+  - **Output**: Unit tests (framework-specific) + explanation of coverage and gaps  
 
-- **Test Case Design**
-  - **Goal**: Identify normal, edge, and invalid input scenarios.
-  - **Input**: Feature description or function behavior.
-  - **Output**: Structured list of test cases.
+- **Test Failure Explanation**
+  - **Goal**: Explain why a test failed and how to fix code or test correctly  
+  - **Input**: Failing test output + relevant code + recent changes  
+  - **Output**: Failure analysis + fix options + recommended next test to run  
 
-- **Test Failure Analysis**
-  - **Goal**: Explain why a test failed and how to fix it.
-  - **Input**: Failed test output and source code.
-  - **Output**: Root cause analysis and corrected code or test.
+- **Mocking & Test Doubles Setup**
+  - **Goal**: Make code testable by isolating external dependencies (DB, network, clock)  
+  - **Input**: Code that calls external services + desired test behavior  
+  - **Output**: Mock/stub strategy + example tests + suggested refactor for dependency injection  
 
-## Productivity and Automation
-- **Boilerplate Generation**
-  - **Goal**: Quickly create repetitive code structures.
-  - **Input**: Framework, language, and component type.
-  - **Output**: Starter template code.
+## Architecture & Design
+- **Module Boundary Definition**
+  - **Goal**: Split responsibilities cleanly to reduce coupling and improve scalability  
+  - **Input**: Current folder/module layout + pain points + future features  
+  - **Output**: Proposed module boundaries + data flow summary + migration steps  
 
-- **Code Translation**
-  - **Goal**: Convert code from one language to another.
-  - **Input**: Source code in [LANGUAGE A].
-  - **Output**: Equivalent code in [LANGUAGE B].
+- **Dependency Review**
+  - **Goal**: Decide whether to add, replace, or remove a library safely  
+  - **Input**: Current dependency + requirements (license, size, performance, security)  
+  - **Output**: Recommendation + risks + integration plan + rollback plan  
 
-- **Query or Script Generation**
-  - **Goal**: Generate reusable code for common programming tasks.
-  - **Input**: Description of the programming task.
-  - **Output**: Ready-to-use code snippet, query, or script.
+- **Design Review Prompt**
+  - **Goal**: Stress-test a proposed solution before implementing it  
+  - **Input**: Design doc/approach + constraints (latency, cost, security, maintainability)  
+  - **Output**: Identified risks + alternative designs + questions to validate assumptions  
