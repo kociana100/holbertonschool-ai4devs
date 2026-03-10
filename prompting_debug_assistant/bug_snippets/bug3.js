@@ -7,6 +7,7 @@ function formatUser(user) {
   return `${upperName} from ${city} (${tagCount} tags)`;
 }
 
+
 function getUserFromApiMock(id) {
   // Simulating inconsistent API response:
   if (id === 1) return { name: "Ana", address: { city: "Tirana" }, tags: ["data", "sql"] };
