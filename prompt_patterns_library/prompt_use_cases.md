@@ -84,3 +84,11 @@
 - **Goal**: Generate SQL queries, shell scripts, or automation snippets.
 - **Input**: Task description.
 - **Output**: Ready-to-use script or query.ements
+
+### Use Case – Query/Script Generation
+- **Goal**: Quickly generate small reusable pieces of code for common tasks
+- **Input**: Description of the programming task (e.g., file reading, API request, data parsing)
+- **Output**: Ready-to-use code snippet in the requested programming language
+
+
+
