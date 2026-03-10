@@ -16,11 +16,6 @@
   - **Input**: Source file or snippet.
   - **Output**: Review comments with suggested improvements.
 
-- **Performance Optimization**
-  - **Goal**: Improve execution speed and reduce unnecessary resource usage.
-  - **Input**: Existing code that performs slowly or inefficiently.
-  - **Output**: Optimized code with explanation of improvements.
-
 ## Debugging
 - **Error Explanation**
   - **Goal**: Understand compiler, runtime, or logic errors.
@@ -36,11 +31,6 @@
   - **Goal**: Analyze program behavior line by line.
   - **Input**: Function or algorithm.
   - **Output**: Execution walkthrough with variable changes.
-
-- **Log Analysis**
-  - **Goal**: Identify issues using application logs or debug output.
-  - **Input**: Log file or debugging output.
-  - **Output**: Explanation of likely causes and suggested fixes.
 
 ## Documentation
 - **Code Comment Generation**
@@ -58,11 +48,6 @@
   - **Input**: Project summary and features.
   - **Output**: README section or full README draft.
 
-- **API Documentation Generation**
-  - **Goal**: Generate structured documentation for APIs or endpoints.
-  - **Input**: API routes, functions, or service descriptions.
-  - **Output**: Organized API documentation with parameters and responses.
-
 ## Testing
 - **Unit Test Generation**
   - **Goal**: Create tests for functions and modules.
@@ -79,11 +64,6 @@
   - **Input**: Failed test output and source code.
   - **Output**: Root cause analysis and corrected code or test.
 
-- **Edge Case Detection**
-  - **Goal**: Identify unusual or boundary inputs that may break the program.
-  - **Input**: Function or system behavior description.
-  - **Output**: List of edge cases and suggested tests.
-
 ## Productivity and Automation
 - **Boilerplate Generation**
   - **Goal**: Quickly create repetitive code structures.
@@ -99,8 +79,3 @@
   - **Goal**: Generate reusable code for common programming tasks.
   - **Input**: Description of the programming task.
   - **Output**: Ready-to-use code snippet, query, or script.
-
-- **Code Template Generation**
-  - **Goal**: Automatically generate templates for common project structures.
-  - **Input**: Framework or application type.
-  - **Output**: Predefined project template with starter files.
