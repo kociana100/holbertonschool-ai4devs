@@ -1,17 +1,15 @@
 # Product Idea
 
 ## Vision
-Enable companies to reduce commuting costs and environmental impact by helping employees share rides efficiently through intelligent carpool matching and corporate system integration.
+Enable companies to reduce employee commuting costs and carbon emissions through intelligent carpooling, while improving workplace connection and transportation efficiency.
 
 ## Users
-- **Corporate Employees**: want affordable, convenient commuting options and opportunities to connect with colleagues during their daily commute.  
-- **HR Managers**: want to improve employee satisfaction and demonstrate tangible benefits from corporate wellness and sustainability programs.  
-- **Facility Managers**: want to reduce parking congestion and optimize the use of available parking spaces.  
-- **Sustainability Officers**: want to track and report measurable reductions in carbon emissions from employee transportation.
+- **Corporate Employees**: want a cheaper, more convenient way to commute and prefer flexible carpool options with colleagues.  
+- **HR Managers**: want to improve employee satisfaction and support workplace wellness initiatives through better commuting solutions.  
+ 
 
 ## Key Features
-- Smart commute matching based on route similarity, schedules, and preferences  
-- Corporate Single Sign-On (SSO) integration for seamless employee access  
-- Environmental impact tracking with CO₂ reduction reporting  
-- Cost savings analytics for employees and companies  
-- Parking optimization through reserved spaces and carpool participation tracking
+- Smart commute matching based on route, schedule, and user preferences  
+- Corporate SSO integration for secure and seamless employee access  
+- Environmental impact tracking with CO₂ savings reports  
+- Parking optimization through support for carpool-based parking management  
