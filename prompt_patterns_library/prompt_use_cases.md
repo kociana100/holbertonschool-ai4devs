@@ -1,7 +1,6 @@
 # Prompt Use Cases
 
 ## Code Quality
-
 - **Refactoring**
   - **Goal**: Improve readability, maintainability, and performance.
   - **Input**: Source function or class in [LANGUAGE].
@@ -23,7 +22,6 @@
   - **Output**: Optimized code with explanation of improvements.
 
 ## Debugging
-
 - **Error Explanation**
   - **Goal**: Understand compiler, runtime, or logic errors.
   - **Input**: Error message and related code.
@@ -45,7 +43,6 @@
   - **Output**: Explanation of likely causes and suggested fixes.
 
 ## Documentation
-
 - **Code Comment Generation**
   - **Goal**: Add clear explanations inside the code.
   - **Input**: Raw code without comments.
@@ -67,7 +64,6 @@
   - **Output**: Organized API documentation with parameters and responses.
 
 ## Testing
-
 - **Unit Test Generation**
   - **Goal**: Create tests for functions and modules.
   - **Input**: Source code or function description.
@@ -89,7 +85,6 @@
   - **Output**: List of edge cases and suggested tests.
 
 ## Productivity and Automation
-
 - **Boilerplate Generation**
   - **Goal**: Quickly create repetitive code structures.
   - **Input**: Framework, language, and component type.
