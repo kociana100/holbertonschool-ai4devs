@@ -1,13 +1,17 @@
 # Microservices Architecture
 
-- **Frontend App**: User interface where users log in, record expenses and income, view dashboards, and manage budgets.  
-- **API Gateway**: Single entry point that routes client requests to the correct backend service and simplifies communication between frontend and services.  
-- **Auth Service**: Manages user registration, login, authentication, and access control.  
-- **Expense Service**: Handles creation, update, deletion, and retrieval of expense and income records.  
-- **Budget Service**: Manages user budgets, spending limits, and budget progress calculations.  
-- **AI Insights Service**: Generates smart financial insights and recommendations based on user spending patterns.  
-- **Subscription Service**: Detects recurring transactions and tracks subscriptions or repeated payments.  
-- **Notification Service**: Sends alerts and reminders for budget limits, unusual spending, and recurring payments.  
-- **Reporting Service**: Creates summaries, charts, and downloadable reports for financial analysis.  
-- **Analytics Service**: Collects usage data and financial metrics to support dashboards and system monitoring.  
-- **Database per Service**: Each service stores its own data independently to improve modularity, scalability, and service isolation.  
+- **API Gateway**: Acts as the single entry point for client requests. It routes requests to the correct service, such as sending login requests to the Auth Service or expense operations to the Transaction Service.
+
+- **Auth Service**: Manages user registration, login, authentication, and session validation. It ensures only authorized users can access financial data and other platform features.
+
+- **Transaction Service**: Handles adding, editing, deleting, and retrieving income and expense records. It is the main service responsible for storing financial transactions and sharing transaction data with the Budget, Insights, and Subscription services.
+
+- **Budget Service**: Manages user budgets, category spending limits, and budget progress calculations. It uses transaction data from the Transaction Service to determine whether a user is close to or has exceeded a budget.
+
+- **Insights Service**: Analyzes transaction patterns and generates smart financial insights, such as unusual spending increases or saving opportunities. It depends on financial data from the Transaction Service to produce personalized recommendations.
+
+- **Subscription Service**: Detects recurring transactions and identifies likely subscriptions such as Netflix, Spotify, or gym payments. It uses transaction history from the Transaction Service and can trigger reminders through the Notification Service.
+
+- **Notification Service**: Sends alerts and reminders to users, such as budget limit warnings, recurring subscription notifications, or unusual spending alerts. It receives events from the Budget Service and Subscription Service.
+
+- **Reporting Service**: Generates financial summaries, visual dashboard data, and downloadable reports. It gathers processed information from other services so users can view monthly spending, category breakdowns, and savings reports.
